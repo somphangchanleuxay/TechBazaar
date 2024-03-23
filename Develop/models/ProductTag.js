@@ -15,7 +15,7 @@ ProductTag.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
-        model: 'Product', // Make sure it matches the actual model name
+        model: 'Product', 
         key: 'id'
       }
     },
@@ -23,7 +23,7 @@ ProductTag.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
-        model: 'Tag', // Make sure it matches the actual model name
+        model: 'Tag', 
         key: 'id'
       }
     }
@@ -33,7 +33,7 @@ ProductTag.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'product_tag',
+    modelName: 'Product_tag',
   }
 );
 
