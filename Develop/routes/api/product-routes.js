@@ -58,12 +58,13 @@ router.post('/', async (req, res) => {
 router.put('/:id', async (req, res) => {
   try {
     // Update product data
-    const [rowsAffected, [updatedProduct]] = await Product.update(req.body, {
+    const updatedProductdata = await Product.update(req.body,{
       where: { id: req.params.id },
       returning: true, // Include the updated product in the response
     });
+    console.log (updatedProductdata[1], "rowsAffected")
 
-    if (rowsAffected === 0) {
+    if (updatedProductdata[1] === 0) {
       return res.status(404).json({ error: 'Product not found' });
     }
 
@@ -92,7 +93,7 @@ router.put('/:id', async (req, res) => {
       ]);
     }
 
-    res.status(200).json(updatedProduct);
+    res.status(200).json(updatedProductdata);
   } catch (err) {
     console.error(err);
     res.status(400).json(err);
