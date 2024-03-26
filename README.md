@@ -30,6 +30,7 @@ npm start
 
 5.Access the API endpoints at http://localhost:3000 (or as specified in your environment).
 
+
 ## Usage
 To use TechBazaar in your project, follow these steps:
 
@@ -62,10 +63,16 @@ Note:(Replace :id with the actual ID of the product)
 
 Also refer to video if you need a visual walkthrough.
 
+Link to Video
+https://drive.google.com/file/d/1f9DR02g9VhD3t5jwN4nmFhM4nW4lcs8O/view
+
 ## Contact
 
 Github
 https://github.com/somphangchanleuxay
+
+Link to Repository
+https://github.com/somphangchanleuxay/TechBazaar 
 
 ## License
 
