@@ -15,7 +15,7 @@ This project serves as the foundation for building an e-commerce website, managi
 ## Installation
 
 1.Clone the repository in your terminal.
-git clone https://github.com/your-username/TechBazaar.git
+git clone https://github.com/somphangchanleuxay/TechBazaar.git
 
 2.Navigate to project directory.
 cd TechBazaar
